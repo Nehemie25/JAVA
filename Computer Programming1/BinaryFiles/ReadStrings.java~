@@ -1,0 +1,29 @@
+import java.io.*;
+public class ReadStrings
+{
+     public static void main (String [] args) throws IOException
+     {
+          FileInputStream fstream = new FileInputStream ("names.dat");
+          ObjectInputStream inputFile = new ObjectInputStream (fstream);
+          boolean endOfFile = false;
+          String name = "";
+          
+          while (!endOfFile)
+          {
+              try
+              {
+               
+               name = (String)inputFile.readObject ();
+               System.out.println ("name :" + name);
+              }
+              catch (EOFException e)
+              {
+                   endOfFile = true;
+              }
+          }
+          
+          inputFile.close();
+     }
+}
+               
+          

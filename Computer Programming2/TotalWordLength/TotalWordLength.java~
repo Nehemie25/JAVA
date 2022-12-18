@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class TotalWordLength
+{
+     public static void main (String [] args)
+     {
+          Scanner scan = new Scanner(System.in);
+          String word1 = word2 = word3 = word4 = "";
+          int totalLength = 0;
+          System.out.println("Enter three words of your choice");
+          
+          System.out.println("Enter the first word");
+          word1 = scan.next();
+          
+          System.out.println("Enter the second word");
+          word2 = scan.next();
+          
+          System.out.println("Enter the third word");
+          word3 = scan.next();
+          
+          System.out.println("Enter the fourth word");
+          word1 = scan.next();
+          
+          totalLength = word1.length() + word2.length() + word3.length() + word4.length();
+          
+          System.out.printf("The total words length is %d \n", totalLength);
+          System.out.print("The reverse order of the four words is %s  %s  %s  %s ", word1, word2, word3, word4);
+     }
+}
+          
+          
+          

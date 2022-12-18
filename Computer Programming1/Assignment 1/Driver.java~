@@ -1,0 +1,98 @@
+public class Driver
+{
+     public static void main (String [] args)
+     {
+          /* instantiation of new objects using default and parameterized constructors
+           * for the Vehicle, Car and Motorcycle classes
+           */
+          
+          Vehicle noVehicle = new Vehicle ();
+          Vehicle mazda = new Vehicle ("Mazda", 1943, 7000);
+          
+          Car noCar = new Car ();
+          Car toyota = new Car ("Toyota", 2001, 25000, 5);
+          
+          Motorcycle noCycle = new Motorcycle ();
+          Motorcycle yamaha = new Motorcycle ("Yamaha", 1995, 10000, 485);
+          
+          // implementation of all Vehicle class methods 
+         
+          
+          System.out.println ("Showing initial Vehicle values set by default and parameterized constructors");
+          System.out.println ();
+          System.out.println (noVehicle);
+          System.out.println (mazda.toString());
+          System.out.println ();
+          
+          
+          System.out.println ("values for mazda from get methods:\nModel:  " + mazda.getModel() + "\nYear: " + mazda.getYear() + "\nPrice: " +
+                              mazda.getPrice());
+          System.out.println();
+          
+          System.out.println ("Testing setModel, setYear and setPrice for a Vehicle object");
+          System.out.println ();
+          mazda.setModel ("Mazda-205");
+          mazda.setYear (1985);
+          mazda.setPrice (8500);
+          
+          System.out.println ("Showing update Vehicle values");
+          System.out.println ();
+          System.out.println (mazda.toString());
+          System.out.println ();
+          
+          
+          // implementation of all Car class methods 
+          
+          
+          System.out.println ("Showing initial Car values set by default and parameterized constructors");
+          System.out.println ();
+          System.out.println (noCar);
+          System.out.println (toyota.toString());
+          System.out.println ();
+          
+          System.out.println ("values for toyota from get methods:\nModel: " + toyota.getModel() + "\nYear: " + toyota.getYear() + "\nPrice: " +
+                              toyota.getPrice() + "\nDoors: " + toyota.getDoors());
+          System.out.println();
+          
+          System.out.println ("Testing setModel, setYear, setPrice and setDoors for a Car object");
+          System.out.println ();
+          toyota.setModel ("Toyota-corolla");
+          toyota.setYear (2008);
+          toyota.setPrice (15000);
+          toyota.setDoors (4);
+          
+          System.out.println ("Showing update Car values");
+          System.out.println ();
+          System.out.println (toyota.toString());
+          System.out.println ();
+          
+          
+          // implementation of all Motorcycle class methods 
+          
+          System.out.println ("Showing initial Motorcycles values set by default and parameterized constructors");
+          System.out.println ();
+          System.out.println (noCycle);
+          System.out.println (yamaha.toString());
+          System.out.println ();
+          
+          System.out.println ("values for yamaha from get methods \nModel: " + yamaha.getModel() + "\nYear: " + yamaha.getYear() + "\nPrice: " +
+                              yamaha.getPrice() + "\nPrice: " + yamaha.getSize());
+          System.out.println();
+          
+          System.out.println ("Testing setModel, setYear, setPrice and setSize for a Motorcycle object");
+          System.out.println ();
+          yamaha.setModel ("yamaha-inferno");
+          yamaha.setYear (2014);
+          yamaha.setPrice (25000);
+          yamaha.setSize (524);
+          
+          
+          System.out.println ("Showing update Motorcycle values");
+          System.out.println ();
+          System.out.println (yamaha.toString());
+          System.out.println ();
+          
+          
+          
+     }
+}

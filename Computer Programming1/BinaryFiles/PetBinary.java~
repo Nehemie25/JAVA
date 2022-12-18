@@ -1,0 +1,45 @@
+import java.io.*;
+public class PetBinary
+{
+     public static void main (String [] args) thows IOException, ClassNotFoundException
+     {
+          Pet [] petArray = { new Pet ("pet1", 1),  new Pet ("pet2", 2],  new Pet ("pet3", 3),  new Pet ("pet4", 4),  new Pet ("pet5", 5) };
+          Pet [] petArrayCopy;
+FileOutputStream outStream = new FileOutputStream ("petObject.dat");
+ObjectOutputStream outputFile = new ObjectOutputStream (outStream);
+outputFile.writeObject (petArray);
+outputFile.close();
+
+for (int i = 0; i < petArray.length; i++)
+{
+     System.out.println (petArray[i]);
+}
+
+          
+FileInputStream inStream = new FileInputStream ("petObject.dat");
+ObjectInputStream InputFile = new ObjectInputStream (inStream);
+boolean endOfFile = false;
+
+while (!endOfFile)
+{
+     try
+     {
+     
+    petArrayCopy = (Pet [])(inputFile.readObject ());
+     }
+     catch (EOFException e)
+     {
+          endOfFile = true;
+     }
+}
+
+for (int i = 0; i < petArrayCopy.length; i++)
+{
+     System.out.println (petArrayCopy [i]);
+}
+}
+}
+
+
+
+          

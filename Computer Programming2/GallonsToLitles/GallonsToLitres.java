@@ -1,0 +1,21 @@
+/*GallonsToLitres - converts user input of US gallons to equivalent litres 
+*/
+import java.util.Scanner; // use Scanner class for console input
+public class GallonsToLitres
+{
+     public static void main (String[] args) 
+     { 
+          // GAL2LT is a CONSTANT used in this program (the purpose of the keyword final ) 
+          final double GAL2LT = 3.78541; // conversion factor: 1 gal ~= 3.78541 litre
+          Scanner scan = new Scanner (System.in); // attach input to console (System.in)
+          double inputGallons = 0.0; // gallons value provided by user
+          double resultLitres = 0.0; // calculated litres value
+          System.out.println ("Gallons to Litres Converter");
+          System.out.print ("How many gallons? ");
+          inputGallons = scan.nextDouble(); // get gallons from user 
+          resultLitres = inputGallons * GAL2LT; // calculate gallons to litres 
+
+         // display result, \t (tab) used to help format output
+          System.out.printf ("Converted :  %.5f gal  =  %.5f litre \n", inputGallons, resultLitres);
+     } // end of main() 
+} // end of class

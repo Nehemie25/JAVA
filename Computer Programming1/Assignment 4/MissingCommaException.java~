@@ -1,0 +1,12 @@
+public class MissingCommaException extends Exception
+{
+     MissingCommaException ()
+     {
+          super ("missing commas in the student information");
+     }
+     
+     MissingCommaException (String message)
+     {
+          super (message);
+     }
+}

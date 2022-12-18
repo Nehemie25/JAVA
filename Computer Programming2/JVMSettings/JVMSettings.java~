@@ -1,0 +1,7 @@
+public class JVMSettings 
+{
+     public static voidmain (String [] args)
+     {
+          System.out.println (System.getenv());
+     }
+}

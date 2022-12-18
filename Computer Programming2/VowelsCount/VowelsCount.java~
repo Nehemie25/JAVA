@@ -1,0 +1,51 @@
+import java.util.Scanner;
+public class VowelsCount
+{
+     public static void main (String [] args)
+     {
+          String phrase = ""; 
+          char letter = ' ';
+          int aCount, eCount, iCount, oCount, uCount, yCount;
+          Scanner scan = new Scanner (System.in);
+          System.out.print ("String: ");
+          phrase = nextLine();
+          
+          for (int count = 0; count <= phrase.length(); count ++)
+          {
+               letter = phrase.toUpperCase().charAt (count);
+               
+               switch (letter)
+               {
+                    case 'A': 
+                         aCount++;
+                         break;
+                         
+                    case 'E': 
+                         eCount++;
+                         break;
+                         
+                    case 'I': 
+                         iCount++;
+                         break;
+                         
+                    case 'O': 
+                         oCount++;
+                         break;
+                         
+                    case 'Y': 
+                         yCount++;
+                         break;
+               }
+               
+          }
+          
+          
+          System.out.printf ("a - %d", aCount);
+          System.out.printf ("e - %d", eCount);
+          System.out.printf ("i - %d", iCount);
+          System.out.printf ("o - %d", oCount);
+          System.out.printf ("u - %d", uCount);
+          System.out.printf ("y - %d", yCount);
+          
+     }
+}

@@ -1,0 +1,29 @@
+import java.util.Random;
+public class StandardDeviation
+{
+     public static void main (String [] args)
+     {
+          Random rand = new Random();
+          int [] values = new int [50];
+          int sum = 0, sumOfDif = 0;
+          double mean = 0.0, standardDeviation = 0.0;
+          
+          for (int i=0; i < values.length; i++)
+          {
+               values[i] = rand.nextInt (100);
+               sum += values[i];
+          }
+          mean = (double)sum / values.length;
+          
+          for (int j = 0; j < values.length; j++)
+          {
+               sumOfDif += Math.pow ((values[i] - mean), 2);
+          }
+          standardDeviation = Math.sqrt ((double)sumOfDif / (n-1));
+          
+          System.out.printf ("The mean values is %.3f %n", mean);
+          System.out.printf ("The standard deviation  values is %.3f %n", standardDeviation);
+     }
+}
+          
+          

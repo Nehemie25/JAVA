@@ -1,0 +1,108 @@
+/* The Pet class encapsulates a "pet" (a personal animal friend).
+ *   The class has three (3) attributes (data): name, age (years), and type (
+ */
+
+public class Pet
+{
+     // attributes - declare and init. with default values
+     private String name = "nameless";  // name of pet ("Fluffy", "Fido", "Mr. Pickeles", etc.)
+     private int age = 0;               // age of pet (in years)
+     private char type = 'x';           // type of pet ('d'-dog, 'c'-cat', 'b'-bird, 's'-snake, 'x'-no type, generic)
+     
+     // default constructor - no parameter
+     public Pet ()                     // note: constructors have no "static", and no return type
+     {
+//          System.out.println ("PET BIRTH: generic");
+//          name = "";             // if not defined above in the declarations,
+//          age = 0;               // the default constructor could also provide "initial" (default) values
+//          type = 'x';
+     }// end of Pet()
+     
+     // alternate constructor - populate Pet object with a name, age, and char
+     public Pet (String name, int age, char type)
+     {
+//          System.out.println ("PET BIRTH: specific " + name);          
+          this.name = name;          // set attributes (this.) to parameters values
+          this.age = age;            //   "this." refers to the attribute variables
+          this.type = type;
+     }// end of Pet()
+     
+     
+     // toString() method - to return a "formatted" string of the object attributes
+     public String toString()
+     {
+          String ret = "";        // string that gets returned
+          
+//          ret = "My name is " + name;     // place name in string
+//          ret += ". I am " + age + " years old ";
+//          ret += ". And I am a " + typeAsString();
+          
+          ret = String.format ("My name is %s. I am %d years old. And I am a %s.",
+		                       name, age, typeAsString());
+          
+          return (ret);           // return the formatted string
+     }// toString()
+     
+	 // type as string - to obtain the string form of the type 
+	 public String typeAsString()
+	 {
+		  String typeS = "notype";
+		  
+		  if ( this.type == 'd' )
+			  typeS = "dog";
+		  else if ( this.type == 'c' )
+			  typeS = "cat";
+		  else if ( this.type == 'b' )
+			  typeS = "bird";
+		  else if ( this.type == 's' )
+			  typeS = "snake";
+		  else if ( this.type == 'x' )
+			  typeS = "generic";
+		  
+	      return (typeS);
+	 }
+	 
+     // speak() - let pet "speak" directly to the console, based on type
+     public void speak()
+     {
+          String output = "";     // the "sound" shown on screen
+          
+          switch (this.type)
+          {
+               case 'd':               // if dog, then bark
+                   output = "bark";
+                   break;
+               case 'c':               // if cat, then meow
+                    output = "meow";
+                    break;
+               case 'b':               // if bird, then squawk
+                    output = "squawk";
+                    break;
+               case 's':               // if snake, then hiss
+                    output = "hiss";
+                    break;
+               case 'x':               // if generic pet, then generic pet sound
+                    output = "generic pet sound";
+                    break;
+               default:                // if not one of the pets, an "error" sound
+                    output = "not a pet sound";
+                    break;
+          }
+          
+          System.out.println (output);   // show pet "sound" to console
+     }// end of speak()
+     
+     // compare two Pets, only name & type
+     public boolean equals( Pet that )
+     {
+          boolean ret = false;    // default
+          
+          if ( this.name.equals(that.name) && 
+               this.type == that.type )    // equals() of the name, == of the type
+               ret = true;
+
+          return (ret);     // return outcome
+     }
+     
+     
+}

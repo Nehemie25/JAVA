@@ -1,0 +1,30 @@
+public class Motorcycle extends Vehicle
+{
+     private int size;
+     
+     public Motorcycle ()
+     {
+          super();
+          size = 0;
+     }
+     
+     public Motorcycle (String newModel, int newYear, double newPrice, int newSize)
+     {
+          super (newModel, newYear, newPrice);
+          size = newSize;
+     }
+     public int getSize ()
+     {
+          return size;
+     }
+     public void setSize (int newSize)
+     {
+          size = newSize;
+     }
+     
+     public String toString ()
+     {
+          
+          return super.toString() + " and has a size of " + size;
+     }
+}

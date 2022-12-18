@@ -1,0 +1,172 @@
+NGUIMBOUS NEHEMIE
+T00694095
+Assignment5
+Due Date: July 29, 2022
+Program description: The purpose of this program is to 
+-be familiar with the use of array stacks
+-learn how to create a generic stack
+-learn how to add a new element to a stack and deal with the Exceptions
+-learn how to remove elements from a stack and deal with the Exceptions
+-print the content of a stack
+-check if the stack is empty
+
+
+---------------------------------------------OUTPUT-------------------------------------------------------------
+
+
+
+
+Testing the isEmpty() method for the first time
+is your box empty ? true
+
+Displaying the content of our testBucket for the first time
+The bucket is empty
+
+Attending to remove an element from the empty testBucket
+Your bucket is empty can't draw anaything more from it
+
+Attending to add 11 elements to our testBucket array
+1 added
+15 added
+78 added
+54 added
+14 added
+65 added
+39 added
+98 added
+62 added
+5 added
+the bucket is full 85 cannot be added
+
+The content of your testBucket is now :
+ 
+element 0: 1
+element 1: 15
+element 2: 78
+element 3: 54
+element 4: 14
+element 5: 65
+element 6: 39
+element 7: 98
+element 8: 62
+element 9: 5
+
+
+Attending to remove randomly 11 elements to our testBucket array
+15 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 1
+element 1: 5
+element 2: 78
+element 3: 54
+element 4: 14
+element 5: 65
+element 6: 39
+element 7: 98
+element 8: 62
+
+
+1 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 62
+element 1: 5
+element 2: 78
+element 3: 54
+element 4: 14
+element 5: 65
+element 6: 39
+element 7: 98
+
+
+14 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 62
+element 1: 5
+element 2: 78
+element 3: 54
+element 4: 98
+element 5: 65
+element 6: 39
+
+
+54 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 62
+element 1: 5
+element 2: 78
+element 3: 39
+element 4: 98
+element 5: 65
+
+
+98 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 62
+element 1: 5
+element 2: 78
+element 3: 39
+element 4: 65
+
+
+62 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 65
+element 1: 5
+element 2: 78
+element 3: 39
+
+
+65 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 39
+element 1: 5
+element 2: 78
+
+
+39 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 78
+element 1: 5
+
+
+78 has been removed
+The updated content of our testBucket is :
+ 
+element 0: 5
+
+
+5 has been removed
+The updated content of our testBucket is :
+The bucket is empty
+
+Your bucket is empty can't draw anaything more from it
+
+
+The updated content of our testBucket is :
+The bucket is empty
+
+List of friends:  
+element 0: Jeff
+element 1: Max
+element 2: Adamou
+element 3: Njapon
+element 4: Fokou
+
+
+Duration of the game:  
+element 0: 2.0
+element 1: 3.5
+element 2: 2.5
+element 3: 3.0
+element 4: 4.0
+
+
+the only friend i choose to play with is Njapon for 2.5 hours > 

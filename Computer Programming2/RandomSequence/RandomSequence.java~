@@ -1,0 +1,26 @@
+import java.util.Scanner;
+import java.util.Random;
+public class RandomSequence
+{
+     public static void main (String [] args)
+     {
+          int n = 0, randValue = 0;
+          Scanner scan = new Scanner (System.in);
+          Random rand = new Random();
+          System.out.printt ("How many values ?:");
+          n = scan.nextInt();
+          
+          for (int i=0; i < n; i++)
+          {
+              randValue = rand.nextInt (30 - 0 + 1) + 0;
+              System.out.printf ("%d :", randValue);
+                  
+              for (int j = 0; j < randValue; j++)
+              {
+                   System.out.print ("*");
+              }
+              System.out.println ();
+              
+          }
+     }
+}

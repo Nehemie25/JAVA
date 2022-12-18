@@ -1,0 +1,21 @@
+/*MilesToKilometer - converts user input of US miles  to equivalent Kilometers 
+*/
+import java.util.Scanner; // use Scanner class for console input
+public class MilesToKilometers
+{
+     public static void main (String[] args) 
+     { 
+          // MTKM is a CONSTANT used in this program (the purpose of the keyword final ) 
+          final double MTKM =1.60935 ; // conversion factor: 1 mile ~= 1.60935 kilometers
+          Scanner scan = new Scanner (System.in); // attach input to console (System.in)
+          double inputMiles = 0.0; // mile value provided by user
+          double resultKilometers = 0.0; // calculated kilometers value
+          System.out.println ("Miles to Kilometers Converter");
+          System.out.print ("How many miles? ");
+          inputMiles = scan.nextDouble(); // get mile from user 
+          resultKilometers = inputMiles * MTKM; // calculate miles to kilometers
+
+         // display result, \t (tab) used to help format output
+          System.out.printf ("Converted :  %.4f m  =  %.4f km \n", inputMiles, resultKilometers);
+     } // end of main() 
+} // end of class

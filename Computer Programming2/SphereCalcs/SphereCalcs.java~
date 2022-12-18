@@ -1,0 +1,22 @@
+import java.lang.Math;
+import java.util.Scanner;
+public class SphereCalcs
+{
+     public static void main (String [] args)
+     {
+          
+          Scanner scan = new Scanner (System.in);
+          double radius =0, area = 0, volume = 0;
+          System.out.println ("Let's Calculate the Volume of a sphere");
+          System.out.println("Enter the radius");
+          radius = scan.nextInt();
+          area = 4*Math.PI * Math.pow(radius, 2);;
+          volume = (4.0/3) *Math.PI* Math.pow(radius, 3);;
+          
+          System.out.printf("A radius of %.4f corresponds to an area of %.4f and a volume of %.4f ", radius, area, volume);
+     }
+}
+          
+          
+          
+          

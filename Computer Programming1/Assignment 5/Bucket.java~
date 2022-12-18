@@ -1,0 +1,143 @@
+import java.util.Arrays;
+import java.util.Random;
+/**
+ * An array implementation of a stack in which the bottom of the
+ * stack is fixed at index 0.
+ * 
+ * @author Java Foundations
+ * @version 4.0
+ */
+public class Bucket<T> 
+{
+     private final static int DEFAULT_CAPACITY = 10;
+     
+     private int count;  
+     private T[] contents;
+     
+     /**
+      * Creates an empty stack using the default capacity.
+      */
+     public Bucket()
+     {
+          this(DEFAULT_CAPACITY);
+     }
+     
+     /**
+      * Creates an empty stack using the specified capacity.
+      * @param initialCapacity the initial size of the array 
+      */
+     public Bucket (int initialCapacity)
+     {
+          count = 0;
+          
+          contents = (T[])(new Object[initialCapacity]);
+     }
+     
+     /**
+      * Adds the specified element to the top of this stack, expanding
+      * the capacity of the array if necessary.
+      * @param element generic element to be pushed onto stack
+      */
+     public void add(T element) throws FullBucketException
+     {
+          if (size() == contents.length) 
+          {
+               throw new FullBucketException ();
+          }
+          else
+          {
+              
+          
+          contents[count] = element;
+          count++;
+          }
+     }
+     
+     
+   
+     public T drawItem() throws EmptyCollectionException
+     {
+          if (isEmpty())
+          {
+               throw new EmptyCollectionException("Your stack is empty can't draw anaything more from it");
+          }
+          else
+          {
+               
+               count--; 
+               Random rand = new Random();
+               int deletedIndex = rand.nextInt (contents.length);
+               
+               // in order to get the real top of the stack not the number of elements
+               T result = contents[deletedIndex];
+               T popElement = result;
+               result = contents [count];
+               contents [count] = null; 
+               
+               return popElement;
+          }
+     }
+     
+     
+     /**
+      * Returns true if this stack is empty and false otherwise. 
+      * @return true if this stack is empty
+      */
+     public boolean isEmpty()
+     {
+          if (count == 0)
+          {
+               return true;
+          }
+          else
+          {
+               return false;
+          }
+     }
+               
+// To be completed as a Programming Project
+               
+               
+          
+          
+          /**
+           * Returns the number of elements in this stack.
+           * @return the number of elements in the stack
+           */
+          public int size()
+          {
+               // To be completed as a Programming Project
+               
+               return count;  // temp
+          }
+          
+          /**
+           * Returns a string representation of this stack. 
+           * @return a string representation of the stack
+           */
+          public String toString()
+          {
+              String res = "Box elements \n";
+              if (isEmpty())
+              {
+                   res = "The bucket is empty";
+              }
+              else
+              {
+                   
+                   
+               
+               
+               for (int i = 0; i < contents.length; i++)
+               {
+                    res += "element " + i + ": " + contents [i] + "\n";
+               }
+               
+
+              }
+              // To be completed as a Programming Project
+               
+               return res;
+          }
+     }
+     

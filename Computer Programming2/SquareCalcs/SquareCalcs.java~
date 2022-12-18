@@ -1,0 +1,15 @@
+import java.util.Scanner
+public class SquareCalcs
+{
+     public static void main (String [] args)
+     {
+         Scanner scan = new Scanner (System.in);
+         double length, perimeter, area;
+          System.out.println("Enter the length of the square");
+          length = scan.nextDouble();
+          perimeter = length * 4;
+          area = length * length;
+          System.out.println("The perimeter of your square is " + perimeter + " and the area is " + area );
+     }
+}
+          

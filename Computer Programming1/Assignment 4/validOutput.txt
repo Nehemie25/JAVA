@@ -1,0 +1,10 @@
+THE WEEKEND,5267,T is  valid:  name: THE WEEKEND number: 5267 program: T
+ELOUNDOU SERENA,4587,C is  valid:  name: ELOUNDOU SERENA number: 4587 program: C
+JOSEPH NKE,4586,B is  valid:  name: JOSEPH NKE number: 4586 program: B
+FLOYD JEPKINS,1258,S is  valid:  name: FLOYD JEPKINS number: 1258 program: S
+JESSIE JONES,4789,C is  valid:  name: JESSIE JONES number: 4789 program: C
+THE WEEKEND,5267,T is  valid:  name: THE WEEKEND number: 5267 program: T
+ELOUNDOU SERENA,4587,C is  valid:  name: ELOUNDOU SERENA number: 4587 program: C
+JOSEPH NKE,4586,B is  valid:  name: JOSEPH NKE number: 4586 program: B
+FLOYD JEPKINS,1258,S is  valid:  name: FLOYD JEPKINS number: 1258 program: S
+JESSIE JONES,4789,C is  valid:  name: JESSIE JONES number: 4789 program: C

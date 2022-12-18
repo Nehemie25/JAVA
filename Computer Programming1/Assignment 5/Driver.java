@@ -1,0 +1,114 @@
+/* creates 3 Bucket objects of size 10
+ * tests the isEmpty(), toString() and drawItem() method on our newly created testBucket object
+ * try to add 11 elements to the testBucket object and catch the Exception when trying to add the eleventh one
+ * try to remove 11 elements to the testBucket object and catch the Exception when trying to remove the eleventh one
+ * Tests the add() and drawItem() method to the 2 other friends and hours Bucket objects
+ */
+
+public class Driver
+{
+     public static void main (String [] args)
+     {
+          
+          
+          
+          int [] numbers = {1, 15, 78, 54, 14, 65, 39, 98, 62, 5, 85};
+          String [] friendsArray = {"Jeff", "Max", "Adamou", "Njapon", "Fokou"};
+          double [] hoursArray = {2.0, 3.5, 2.5, 3.0, 4.0};
+          Bucket <Integer> testBucket = new Bucket <Integer> ();
+          Bucket <String> friends = new Bucket <String> ();
+          Bucket <Double> hours = new Bucket <Double> ();
+          
+          System.out.println ("Testing the isEmpty() method for the first time");
+          System.out.println ("is your box empty ? " + testBucket.isEmpty());
+          System.out.println();
+          System.out.println ("Displaying the content of our testBucket for the first time");
+          System.out.println (testBucket.toString());
+          System.out.println();
+          System.out.println ("Attending to remove an element from the empty testBucket");
+          
+          try
+          {
+               System.out.println (testBucket.drawItem());
+          }
+          catch (EmptyBucketException e)
+          {
+               System.out.println (e.getMessage());
+          }
+          System.out.println();
+          
+          
+          System.out.println ("Attending to add 11 elements to our testBucket array");
+          
+          
+          for (int i = 0; i < numbers.length  ; i++)
+          {
+               try
+               {
+                    testBucket.add (numbers [i]); 
+                    System.out.println(numbers [i] + " added");
+                    
+               }
+               catch (FullBucketException e)
+               {
+                    System.out.println (e.getMessage());
+               }
+               
+               
+          }
+          System.out.println();
+          System.out.println ("The content of your testBucket is now :");
+          System.out.println (testBucket);
+          System.out.println();
+          
+          
+          
+          
+          System.out.println ("Attending to remove randomly 11 elements to our testBucket array");
+          
+          for (int i = 0; i < 11; i++)
+          {
+               try
+               {
+                    int element = testBucket.drawItem();
+                    System.out.println (element + " has been removed");
+                    System.out.println ("The updated content of our testBucket is :" );
+                    System.out.println (testBucket);
+               }
+               catch (EmptyBucketException e)
+               {
+                    System.out.println (e.getMessage ());
+               }
+               System.out.println ();
+               
+          }
+          
+          System.out.println();
+          System.out.println ("The updated content of our testBucket is :" );
+          System.out.println (testBucket);
+          System.out.println();
+          
+          
+          for (int i = 0; i < friendsArray.length; i++)
+          {
+               friends.add (friendsArray [i]);
+          }
+          
+          for (int i = 0; i < hoursArray.length; i++)
+          {
+               hours.add (hoursArray [i]);
+          }
+          
+          
+          System.out.println ("List of friends: " + friends);
+          System.out.println ();
+          System.out.println ("Duration of the game: " + hours);
+          
+          String friend1 = friends.drawItem();
+          double hour1 = hours.drawItem();
+          
+          System.out.println();
+          System.out.printf ("the only friend i choose to play with is %s for %.1f hours ", friend1, hour1);
+          
+     }
+}    

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+public class CharValues 
+{
+     public static void main (String [] args)
+     {
+          Scanner scan = new Scanner (System.in);
+          String imputWord = "";
+          char char1 = '', char2 = '', char3 = '';
+          int val1 = 0, val2 = 0, val3 = 0;
+          println("This program extracts all the characters of a 3 letter string and display each of them seperately as hexadecinal");
+          println("Enter your 3 letters string please");
+          imputWord = scan.nextLine();
+          char1 = imputWord.charAt[0];
+          char2 = imputWord.charAt[1];
+          char3 = imputWord.charAt[2];
+          
+          val1 = (int)char1;
+          val2 = (int)char2;
+          val3 = (int)char3;
+          
+          printf("Our original word contains the following 3 letters %c  %c  %c and the corresponding hexadecimal values are %x  %x  %x", char1, char2,  char3, val1, val2, val3);
+     }
+}
+        
+          
+          
+          
+          

@@ -1,0 +1,12 @@
+public class FullBucketException extends RuntimeException
+{
+     FullBucketException ()
+     {
+          super("empty stack");
+     }
+     
+     FullBucketException (String message)
+     {
+          super(message);
+     }
+}

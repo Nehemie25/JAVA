@@ -1,0 +1,14 @@
+import java.util.Scanner;
+public class TestDelimiter
+{
+     public static void main (String [] args)
+     {
+          Scanner scan = new Scanner (System.in);
+          String phrase = "";
+          
+          phrase = scan.next();
+          
+          System.out.println (phrase);
+     }
+}
+          

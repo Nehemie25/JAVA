@@ -1,0 +1,14 @@
+import java.time.LocalDate; 
+
+public class HelloWorld
+{ 
+     public static void main (String[] args)
+     {
+          String phrase = "My First Program"; // store a string literal 
+          System.out.println ("Hello World"); // display "Hello World" 
+          System.out.println (); // display a blank line
+          System.out.print (phrase); // display the phrase // note: blank lines in the code DO NOT produce blank lines on display 
+          System.out.println (); // end previous line (newline) 
+          System.out.println ( LocalDate.now() ); // display current date
+     }// end of main()
+ }// end of class

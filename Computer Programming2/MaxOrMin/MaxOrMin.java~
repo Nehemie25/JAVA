@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class MaxOrMin
+{
+     public static void main (String [] args)
+     {
+          Scanner scan = new Scanner (System.in);
+          douvle val1 = 0, val2 = 0, val3 =0, min = 0, max = 0;
+          System.out.print ("Hi user, ineed three numbers:");
+          val1 = scan.nextDouble();
+          val2 = scan.nextDouble();
+          val3 = scan.nextDouble();
+          min = val1;
+          max = val1;
+          if ( min > val2)
+          {
+               min = val2;
+          }
+          
+          if ( min > val3)
+          {
+               min = val3;
+          }
+          if ( max < val2)
+          {
+               max = val2;
+          }
+          
+          if ( max < val3)
+          {
+               max = val3;
+          }
+          
+          System.out.printf ("\n the maximum is %.2f and the minimum is %.2f ", min, max);
+     }
+}
+          
+          
+          

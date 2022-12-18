@@ -1,0 +1,12 @@
+import java.util.Scanner;
+import java.io.*;
+public class BinaryTest
+{
+     public static void main (String [] args) throws IOException
+     {
+          Pet pet1 = new Pet ("Rex", 5);
+          FileOutputStream fstream = new FileOutputStream ("Mypet.dat");
+          ObjectOutputStream outputFile = new ObjectOutputStream (fstream);
+          outputFile.writeObject (pet1);
+     }
+}

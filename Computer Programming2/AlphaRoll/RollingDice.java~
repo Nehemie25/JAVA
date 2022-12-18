@@ -1,0 +1,15 @@
+import java.util.Scanner;
+import java,.util.Random;
+public class RollingDice
+{
+     public static void main (String [] args)
+     {
+          char letter1 = 0, letter2 = 0;
+          Scanner scan = new Scanner (System.in);
+          Random rand = new Random();
+          letter1 = (char)(rand.nextInt('Z' - 'A' + 1) + 'a');
+          letter2 = (char)(rand.nextInt('Z' - 'A' + 1) + 'a');
+          System.out.printf ("Letter #1 : %c, Letter #2 : %c", letter1, letter2);
+     }
+}
+          

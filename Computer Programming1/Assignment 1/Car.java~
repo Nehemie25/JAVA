@@ -1,0 +1,29 @@
+public class Car extends Vehicle
+{
+     private int doors;
+     
+     public Car ()
+     {
+          super ();
+          doors = 0;
+     }
+     
+     public Car (String newModel, int newYear, double newPrice, int newDoors)
+     {
+          super (newModel, newYear, newPrice);
+          doors = newDoors;
+     }
+     public int getDoors()
+     {
+          return doors;
+     }
+     public void setDoors (int newDoors)
+     {
+          doors = newDoors;
+     }
+     public String toString()
+     {
+          return super.toString() + " and has " + doors + " doors";
+     }
+}
+          

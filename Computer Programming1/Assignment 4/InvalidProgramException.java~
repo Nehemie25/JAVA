@@ -1,0 +1,14 @@
+public class InvalidProgramException extends Exception
+{
+     InvalidProgramException ()
+     {
+          super ("The program of study is invalid");
+     }
+     
+     
+     InvalidProgramException (String message)
+     {
+          super (message);
+     }
+}
+     

@@ -1,0 +1,11 @@
+
+THOMPSON RIVERS 5214 B has the wrong format. this is an example of the right format: NEHEMIE NGUIMBOUS,2548,C
+NEHEMIE NGUIMBOUS,5000 C has the wrong format. this is an example of the right format: NEHEMIE NGUIMBOUS,2548,C
+JASON DERULO,4589, missing program in your student information
+BRYAN CHESSY,9549,S 9549 is a wrong student number, students numbers must be between 1 and 6000
+BOB PROCTOR,5859,Z Z is an invalid program: the valid programs are B, C, S, T
+THOMPSON RIVERS 5214 B has the wrong format. this is an example of the right format: NEHEMIE NGUIMBOUS,2548,C
+NEHEMIE NGUIMBOUS,5000 C has the wrong format. this is an example of the right format: NEHEMIE NGUIMBOUS,2548,C
+JASON DERULO,4589, missing program in your student information
+BRYAN CHESSY,9549,S 9549 is a wrong student number, students numbers must be between 1 and 6000
+BOB PROCTOR,5859,Z Z is an invalid program: the valid programs are B, C, S, T

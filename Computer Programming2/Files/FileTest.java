@@ -1,0 +1,42 @@
+import java.util.Scanner;
+import java.io.File;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+public class FileTest
+{
+     public static void main (String [] args)
+     throws IOException
+     {
+        
+        int age = 0, count = 0;
+        String inputFileName = "imput.txt", name = "", outputFileName = "output.txt";
+        File file = new File (inputFileName);
+        Scanner scanFile = new Scanner (file);
+        PrintWriter outputFile = new PrintWriter (outputFileName);
+        outputFile.println ("Hello world");
+        
+        while (scanFile.hasNext())
+        {
+             count++;
+             
+             name = scanFile.next();
+             age = scanFile.nextInt();
+             System.out.printf ("%s is %d years old %n",name, age); 
+             outputFile.println (name + "is " + age + " years old ");
+             if (count ==4)
+             {
+                  break;
+             }
+             
+        }
+        scanFile.close();
+        outputFile.close();
+     }
+}
+    
+        
+        
+        
+        
+          

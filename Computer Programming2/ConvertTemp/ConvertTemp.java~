@@ -1,0 +1,22 @@
+import java.util.Scanner
+public class ConvertTemp
+{
+     public static void main (String [] args)
+     {
+          final double CELCIUS = -32, KELVIN = 459.67, FRACTION = 5/9;
+          double celciusT = 0, kelvinT = 0, imputFah = 0;
+          Scanner scan = new Scanner(System.in);
+          println ("This program converts temperature between Fahrenheit and Celcius and then between Fahrenheit and Kelvin");
+          println ("Enter your temperature in Fahrenheit");
+          
+          imputFah = nextDouble();
+         
+          celciusT = (imputFah + CELCIUS)* FRACTION;
+          kelvinT = (imputFah + KELVIN)* FRACTION;
+          printf("The corresponding values of %.5f Fahrenheit are %.5f Celcius and %.5f Kelvin", imputFah, celciusT, kelvinT);
+     }
+}
+          
+          
+          
+          

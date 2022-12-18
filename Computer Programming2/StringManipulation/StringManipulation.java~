@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class StringManipulation 
+{
+     public static void main (String [] args)
+     {
+          Scanner scan = new Scanner (System.in);
+          String sayHello = "";
+          System.out.println("Let's have some fun with String manipulation");
+          System.out.println(" Say hello to the world of programmming");
+          sayHello = scan.nextLine();
+          
+          System.out.println (sayHello);
+          System.out.println(sayHello.toUpperCase);
+          System.out.println(sayHello.toLowerCase);
+     }
+}
+          
